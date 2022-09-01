@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="18"
+   height="18"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="help.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="12"
+     inkscape:cy="12"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <path
+     d="m 8.6688101,0.03552822 c 2.9453249,-0.1650243 5.5516329,2.09867858 5.7166569,5.04579728 0,2.5112393 -0.678034,3.445779 -2.859225,5.0996095 -0.340811,0.258299 -0.582967,0.448436 -0.672654,0.561442 -0.08969,0.111212 -0.05381,0.05919 -0.05381,0.05561 0.01076,0.947096 -0.8484398,1.793742 -1.793742,1.793742 -0.9506835,0 -1.8080923,-0.846646 -1.7937424,-1.793742 0,-0.9004593 0.4000046,-1.6914997 0.8394714,-2.2421786 A 6.8520958,6.8520958 0 0 1 9.3414635,7.3217097 C 9.7073869,7.0347109 10.166585,6.6329126 10.573765,6.1450147 10.742376,5.9441156 10.806951,5.5943358 10.797982,5.3611493 v -0.0574 A 1.7722174,1.7722174 0 0 0 8.8930279,3.623013 C 7.8813572,3.6804127 7.1530978,4.4068784 7.2104976,5.4167553 H 3.6230129 C 3.4579886,2.4714304 5.7216914,0.20055251 8.6688101,0.03552822 Z M 9.0042399,14.385467 a 1.7937425,1.7937425 0 1 1 0,3.587484 1.7937423,1.7937423 0 0 1 0,-3.587484 z"
+     overflow="visible"
+     stroke-width="3.58748"
+     id="path4"
+     style="color:#dedede;fill:#dedede" />
+</svg>
