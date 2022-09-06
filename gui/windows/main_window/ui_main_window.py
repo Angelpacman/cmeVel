@@ -32,8 +32,10 @@ class UI_MainWindow(object):
         # CREATE CENTRAL WIDGET
         self.central_frame = QFrame()
 
-        # CREATE MAIN WIDGET
+        # CREATE MAIN LAYOUT
         self.main_layout = QHBoxLayout(self.central_frame)
+        self.main_layout.setContentsMargins(0,0,0,0)
+        self.main_layout.setSpacing(0)
 
         # LEFT MENU
         self.left_menu = QFrame()
