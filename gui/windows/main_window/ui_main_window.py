@@ -27,3 +27,10 @@ class UI_MainWindow(object):
         # SET INITIAL PARAMETERS
         parent.resize(920, 600)
         parent.setMinimumSize(720, 480)
+
+        
+        # CREATE CENTRAL WIDGET
+        self.central_frame = QFrame()
+        self.central_frame.setStyleSheet("background-color: #282a36")
+
+        parent.setCentralWidget(self.central_frame)
