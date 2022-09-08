@@ -21,6 +21,9 @@ from qt_core import *
 # IMPORT PAGES
 from gui.pages.ui_pages import Ui_application_pages
 
+# IMPORT CUSTOM WIDGETS
+from gui.widgets.py_push_button import PyPushButton
+
 # MAIN WINDOW
 class UI_MainWindow(object):
     def setup_ui(self, parent):
@@ -68,7 +71,7 @@ class UI_MainWindow(object):
         self.left_menu_top_layout.setSpacing(0)
 
         # TOP BUTTONS
-        self.toggle_button = QPushButton("Toggle")
+        self.toggle_button = PyPushButton("Toggle")
         self.btn_1 = QPushButton("1")
         self.btn_2 = QPushButton("2")
 
