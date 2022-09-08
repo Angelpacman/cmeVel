@@ -35,9 +35,29 @@ class MainWindow(QMainWindow):
         self.ui = UI_MainWindow()
         self.ui.setup_ui(self)
 
+        # Toggle button
+        self.ui.toggle_button.clicked.connect(self.toggle_button)
+
 
         # Show app
         self.show()
+
+    def toggle_button(self):
+        # get menu width
+        menu_width = self.ui.left_menu.width()
+
+        # check with
+        width = 50
+        if menu_width == 50:
+            width = 200
+        
+        # start animation
+        self.animation = QPropertyAnimation(self.ui.left_menu, b"minimumWidth")
+        self.animation.setStartValue(menu_width)
+        self.animation.setEndValue(width)
+        self.animation.setDuration(150)
+        self.animation.setEasingCurve(QEasingCurve.InOutSine)
+        self.animation.start()
 
 
 if __name__ == "__main__":
