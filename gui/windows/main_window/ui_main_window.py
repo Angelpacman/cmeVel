@@ -51,18 +51,46 @@ class UI_MainWindow(object):
         self.left_menu_layout.setContentsMargins(0,0,0,0)
         self.left_menu_layout.setSpacing(0)
 
-        # top FRAME MENU
+        # TOP FRAME MENU
         self.left_menu_top_frame = QFrame()
         self.left_menu_top_frame.setMinimumHeight(50)
-        self.left_menu_top_frame.setStyleSheet("background-color: red")
+        self.left_menu_top_frame.setObjectName("left_menu_top_frame")
+        self.left_menu_top_frame.setStyleSheet("#left_menu_top_frame {background-color: red;}")
+
+        # TOP FRAME LAYOUT
+        self.left_menu_top_layout = QVBoxLayout(self.left_menu_top_frame)
+        self.left_menu_top_layout.setContentsMargins(0,0,0,0)
+        self.left_menu_top_layout.setSpacing(0)
+
+        # TOP BUTTONS
+        self.toggle_button = QPushButton("Toggle")
+        self.btn_1 = QPushButton("1")
+        self.btn_2 = QPushButton("2")
+
+        # ADD BUTTONS TO LAYOUT
+        self.left_menu_top_layout.addWidget(self.toggle_button)
+        self.left_menu_top_layout.addWidget(self.btn_1)
+        self.left_menu_top_layout.addWidget(self.btn_2)
 
         # MENU SPACER
         self.left_menu_spacer = QSpacerItem(20,20, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
-        # bottom FRAME MENU
+        # BOTTOM FRAME MENU
         self.left_menu_bottom_frame = QFrame()
         self.left_menu_bottom_frame.setMinimumHeight(50)
-        self.left_menu_bottom_frame.setStyleSheet("background-color: red")
+        self.left_menu_bottom_frame.setObjectName("left_menu_bottom_frame")
+        self.left_menu_bottom_frame.setStyleSheet("#left_menu_bottom_frame {background-color: red;} ")
+
+        # BOTTOM FRAME LAYOUT
+        self.left_menu_bottom_layout = QVBoxLayout(self.left_menu_bottom_frame)
+        self.left_menu_bottom_layout.setContentsMargins(0,0,0,0)
+        self.left_menu_bottom_layout.setSpacing(0)
+
+        # BOTTOM BUTTONS
+        self.help_button = QPushButton("Ayuda")
+
+        # ADD BOTTOM BUTTONS TO LAYOUT
+        self.left_menu_bottom_layout.addWidget(self.help_button)
 
         # LABEL VERSION
         self.left_menu_label_version = QLabel("v0.0.1")
