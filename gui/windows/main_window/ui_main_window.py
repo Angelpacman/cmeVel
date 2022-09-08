@@ -71,7 +71,10 @@ class UI_MainWindow(object):
         self.left_menu_top_layout.setSpacing(0)
 
         # TOP BUTTONS
-        self.toggle_button = PyPushButton("Toggle")
+        self.toggle_button = PyPushButton(
+            text = "Ocultar menu",
+            is_active = True
+        )
         self.btn_1 = QPushButton("1")
         self.btn_2 = QPushButton("2")
 

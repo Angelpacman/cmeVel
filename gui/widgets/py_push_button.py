@@ -91,4 +91,14 @@ class PyPushButton(QPushButton):
         }}
         """
 
-        self.setStyleSheet(style)
+        active_style = f"""
+            QPushButton {{
+                background-color: {btn_hover};
+                border-right: 5px solid #4678e8;
+            }}
+        """
+
+        if not is_active:
+            self.setStyleSheet(style)
+        else:
+            self.setStyleSheet(style + active_style)
