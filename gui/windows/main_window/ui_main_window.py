@@ -46,6 +46,37 @@ class UI_MainWindow(object):
         self.left_menu.setMaximumWidth(50)
         self.left_menu.setMinimumWidth(50)
 
+        # LEFT MENU LAYOUT
+        self.left_menu_layout = QVBoxLayout(self.left_menu)
+        self.left_menu_layout.setContentsMargins(0,0,0,0)
+        self.left_menu_layout.setSpacing(0)
+
+        # top FRAME MENU
+        self.left_menu_top_frame = QFrame()
+        self.left_menu_top_frame.setMinimumHeight(50)
+        self.left_menu_top_frame.setStyleSheet("background-color: red")
+
+        # MENU SPACER
+        self.left_menu_spacer = QSpacerItem(20,20, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        # bottom FRAME MENU
+        self.left_menu_bottom_frame = QFrame()
+        self.left_menu_bottom_frame.setMinimumHeight(50)
+        self.left_menu_bottom_frame.setStyleSheet("background-color: red")
+
+        # LABEL VERSION
+        self.left_menu_label_version = QLabel("v0.0.1")
+        self.left_menu_label_version.setAlignment(Qt.AlignCenter)
+        self.left_menu_label_version.setMinimumHeight(25)
+        self.left_menu_label_version.setMaximumHeight(25)
+        self.left_menu_label_version.setStyleSheet("color: #c3ccdf")
+
+        # ADD TO LAYOUT
+        self.left_menu_layout.addWidget(self.left_menu_top_frame)
+        self.left_menu_layout.addItem(self.left_menu_spacer)
+        self.left_menu_layout.addWidget(self.left_menu_bottom_frame)
+        self.left_menu_layout.addWidget(self.left_menu_label_version)
+
         # CONTENT
         self.content = QFrame()
         self.content.setStyleSheet("background-color: #282a36")
