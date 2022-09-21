@@ -130,3 +130,6 @@ dmypy.json
 
 # vscode debugger settings
 .vscode/
+
+# Pycharm idea debugger settings
+.idea/
