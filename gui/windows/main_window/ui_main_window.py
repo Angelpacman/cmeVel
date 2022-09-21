@@ -72,11 +72,15 @@ class UI_MainWindow(object):
 
         # TOP BUTTONS
         self.toggle_button = PyPushButton(
-            text = "Ocultar menu",
+            text = "Ocultar menu"
+        )
+        self.btn_1 = PyPushButton(
+            text = "Inicio",
             is_active = True
         )
-        self.btn_1 = QPushButton("1")
-        self.btn_2 = QPushButton("2")
+        self.btn_2 = PyPushButton(
+            text = "Cargar datos"
+        )
 
         # ADD BUTTONS TO LAYOUT
         self.left_menu_top_layout.addWidget(self.toggle_button)
@@ -102,7 +106,9 @@ class UI_MainWindow(object):
         self.left_menu_bottom_layout.setSpacing(0)
 
         # BOTTOM BUTTONS
-        self.help_button = QPushButton("Ayuda")
+        self.help_button = PyPushButton(
+            text="Ayuda"
+            )
 
         # ADD BOTTOM BUTTONS TO LAYOUT
         self.left_menu_bottom_layout.addWidget(self.help_button)
