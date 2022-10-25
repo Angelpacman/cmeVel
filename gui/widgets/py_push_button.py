@@ -4,8 +4,8 @@
 #
 # PROJECT CREATED WITH:  PySide6, astropy, scipy, matplotlib, numpy
 #
-# This project has MIT license and is intented to provide a Graphical
-# use interface to have insigts from fit images relatives to Coronal
+# This project has MIT license and is intended to provide a Graphical
+# use interface to have insights from fit images relatives to Coronal
 # Mass Ejections (CME)
 #
 # Github profile: @Angelpacman
@@ -20,20 +20,21 @@ import os
 # IMPORT QT CORE
 from qt_core import *
 
+
 class PyPushButton(QPushButton):
     def __init__(
-        self,
-        text = "",
-        height = 40,
-        minimum_widht = 50,
-        text_padding = 55,
-        text_color = "#c3ccdf",
-        icon_path = "",
-        icon_color = "#c3ccdf",
-        btn_color = "#44475a",
-        btn_hover = "#4f5368",
-        btn_pressed = "#282a36",
-        is_active = False
+            self,
+            text="",
+            height=40,
+            minimum_widht=50,
+            text_padding=55,
+            text_color="#c3ccdf",
+            icon_path="",
+            icon_color="#c3ccdf",
+            btn_color="#44475a",
+            btn_hover="#4f5368",
+            btn_pressed="#282a36",
+            is_active=False
     ):
 
         super().__init__()
@@ -57,22 +58,22 @@ class PyPushButton(QPushButton):
 
         # Set style
         self.set_style(
-            text_padding = self.text_padding,
-            text_color = self.text_color,
-            btn_color = self.btn_color,
-            btn_hover = self.btn_hover,
-            btn_pressed = self.btn_hover,
-            is_active = self.is_active
+            text_padding=self.text_padding,
+            text_color=self.text_color,
+            btn_color=self.btn_color,
+            btn_hover=self.btn_hover,
+            btn_pressed=self.btn_hover,
+            is_active=self.is_active
         )
 
     def set_style(
-        self,
-        text_padding = 55,
-        text_color = "#c3ccdf",
-        btn_color = "#44475a",
-        btn_hover = "#4f5368",
-        btn_pressed = "#282a36",
-        is_active = False
+            self,
+            text_padding=55,
+            text_color="#c3ccdf",
+            btn_color="#44475a",
+            btn_hover="#4f5368",
+            btn_pressed="#282a36",
+            is_active=False
     ):
 
         style = f"""
