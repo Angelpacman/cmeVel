@@ -135,11 +135,12 @@ class UI_MainWindow(object):
 
         # BOTTOM BUTTONS
         self.settings_btn = PyPushButton(
-            text="Ayuda",
+            text="Settings",
             icon_path="settings.svg"
         )
 
         # ADD BOTTOM BUTTONS TO LAYOUT
+        self.left_menu_bottom_layout.addWidget(self.btn_7_help)
         self.left_menu_bottom_layout.addWidget(self.settings_btn)
 
         # # # # # # # # # # # # # # # # 
