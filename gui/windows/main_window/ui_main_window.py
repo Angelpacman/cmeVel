@@ -134,12 +134,13 @@ class UI_MainWindow(object):
         self.left_menu_bottom_layout.setSpacing(0)
 
         # BOTTOM BUTTONS
-        self.help_button = PyPushButton(
-            text="Ayuda"
+        self.settings_btn = PyPushButton(
+            text="Ayuda",
+            icon_path="settings.svg"
         )
 
         # ADD BOTTOM BUTTONS TO LAYOUT
-        self.left_menu_bottom_layout.addWidget(self.help_button)
+        self.left_menu_bottom_layout.addWidget(self.settings_btn)
 
         # # # # # # # # # # # # # # # # 
         # LABEL VERSION
