@@ -76,12 +76,12 @@ class UI_MainWindow(object):
             text="Ocultar menu",
             icon_path="menu.svg"
         )
-        self.btn_1 = PyPushButton(
+        self.btn_1_home = PyPushButton(
             text="Inicio",
             is_active=True,
             icon_path="home.svg"
         )
-        self.btn_2 = PyPushButton(
+        self.btn_2_data = PyPushButton(
             text="Cargar datos",
             icon_path="folder.svg"
         )
@@ -108,8 +108,8 @@ class UI_MainWindow(object):
 
         # ADD BUTTONS TO LAYOUT
         self.left_menu_top_layout.addWidget(self.toggle_button)
-        self.left_menu_top_layout.addWidget(self.btn_1)
-        self.left_menu_top_layout.addWidget(self.btn_2)
+        self.left_menu_top_layout.addWidget(self.btn_1_home)
+        self.left_menu_top_layout.addWidget(self.btn_2_data)
         self.left_menu_top_layout.addWidget(self.btn_3_cone)
         self.left_menu_top_layout.addWidget(self.btn_4_curves)
         self.left_menu_top_layout.addWidget(self.btn_5_gaussFit)
